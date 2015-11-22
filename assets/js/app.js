@@ -258,8 +258,6 @@ app.controller('menuController',['$http', '$scope', '$log', '$location', functio
   // Search the DB for a specific menu item
   $scope.viewMenu = function(menuRef){
 
-		$log.info(menuRef);
-
     //lets search based on ID. ID is passed as menu ref from the client or other controller
     $http.get('/menus?id=' + menuRef ).success(function(data){
       // lets set our data ready for the UI

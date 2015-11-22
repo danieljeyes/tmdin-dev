@@ -38,8 +38,9 @@
       </div>
       <!-- /.container-fluid -->
   </nav>
+
       <!-- Portfolio Grid Section -->
-    <section id="menu" class="bg-light-gray" ng-app="menuStore" ng-controller="menuController as menuCtlr" ng-init="viewMenu('<%= req.params.id %>')">
+    <section id="menu" class="bg-light-gray" ng-app="menuStore" ng-controller="menuController as menuCtlr" ng-init="viewMenu(<%= req.params.menuid %>)">
       <div class="container" ng-show="!error">
             <div class="row">
                 <div class="col-lg-12 text-center">

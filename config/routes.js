@@ -58,7 +58,7 @@ module.exports.routes = {
     },
 
 
-    'get /listmenus/menu/:id': {
+    'get /listmenus/menu/:menuid': {
       view: 'viewMenu'
     },
 
@@ -66,15 +66,7 @@ module.exports.routes = {
       view: 'admin/index',
       locals: {
         layout: 'layoutadmin'
-      },
-
-
-      /// lets configure API routes, to make it easier
-      //'GET /menus': 'MenusController.findMenus',
-      //'GET /menus/:id': 'MenusController.findMenu',
-      //'POST /menus/': 'MenusController.createMenu',
-      //'PUT /menus/:id': 'MenusController.updateMenu'
-
+      }
     },
 
 
