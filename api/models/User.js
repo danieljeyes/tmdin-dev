@@ -1,3 +1,4 @@
+
 /**
 * User.js
 *
@@ -6,6 +7,9 @@
 */
 
 module.exports = {
+
+  schema: true,
+
 
     attributes: {
   	id: {
@@ -56,6 +60,11 @@ module.exports = {
     menus: {
       collection: 'menus',
       via: 'owner'
-    }
+    },
+    passports : {
+      collection: 'Passport',
+       via: 'user'
+    },
+
   },
   };
